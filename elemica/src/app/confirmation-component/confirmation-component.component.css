@@ -1,0 +1,11 @@
+
+.action-bar{
+    background-color: rgb(136, 240, 240);
+    font-family: 'Courier New', Courier, monospace;
+}
+.product-name{
+    font: bold;
+    font-weight: 100;
+    color: rgb(80, 199, 235);
+
+}
