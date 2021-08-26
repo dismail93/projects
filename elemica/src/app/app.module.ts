@@ -6,18 +6,32 @@ import { AppComponent } from './app.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { ConfirmationComponentComponent } from './confirmation-component/confirmation-component.component';
 import { AdditionalDetailsComponent } from './additional-details/additional-details.component';
-import { MatCommonModule, } from '@angular/material/core';
+import { MatCommonModule, MatNativeDateModule, } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { HeaderComponent } from './header/header.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { QuantityComponent } from './quantity/quantity.component';
+import { DateComponent } from './date/date.component';
+import { PriceComponent } from './price/price.component';
+import { DescriptionComponent } from './description/description.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConfirmationComponentComponent,
-    AdditionalDetailsComponent
+    AdditionalDetailsComponent,
+    HeaderComponent,
+    QuantityComponent,
+    DateComponent,
+    PriceComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -27,8 +41,16 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatCommonModule,
     MatIconModule,
-    MatCardModule
-    
+    MatCardModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatToolbarModule
+
+
+
     
     
   ],

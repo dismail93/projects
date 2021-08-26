@@ -1,3 +1,21 @@
-<div class="container-flex pl-5 justify-content-center " style="justify-content: center;width:70%">
-<app-confirmation-component></app-confirmation-component>
+<div class="confirmation-container">
+    <app-header></app-header>
+    <mat-card>
+        <div class="row">
+            <div class="col-3">
+                <app-description></app-description>
+            </div>
+
+            <div class="col-3 p-3">
+                <app-quantity></app-quantity>
+            </div>
+            <div class="col-3 p-3">
+                <app-date></app-date>
+            </div>
+            <div class="col-3 p-3">
+                <app-price></app-price>
+            </div>
+        </div>
+        <app-additional-details></app-additional-details>
+    </mat-card>
 </div>

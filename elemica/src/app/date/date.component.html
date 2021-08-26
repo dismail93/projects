@@ -1,0 +1,28 @@
+<mat-card class="cardrow-container mb-4">
+    <mat-card-header>
+        <mat-card-title>Expected Arrival Date</mat-card-title>
+    </mat-card-header>
+    <div class="row">
+        <div class="col-sm mb-2">
+            <mat-label>Requested</mat-label>
+            <p>09/25/1998</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm mb-2">
+            <mat-label>Confirm </mat-label>
+            <p>09/25/1998</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <mat-form-field>
+                <mat-label>Choose a date</mat-label>
+                <input required matInput [matDatepicker]="seStDt" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="seStDt"></mat-datepicker-toggle>
+                <mat-datepicker #seStDt></mat-datepicker>
+
+            </mat-form-field>
+        </div>
+    </div>
+</mat-card>
