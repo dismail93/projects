@@ -1,0 +1,35 @@
+.accept-box {
+    background-color: rgba(199, 236, 161, 0.514);
+}
+
+.reject-box {
+    background-color: rgba(231, 135, 135, 0.514);
+}
+
+.change-box {
+    background-color: rgba(130, 132, 233, 0.356);
+}
+
+section {
+    display: flex;
+}
+
+.row {
+    flex-wrap: nowrap;
+}
+
+.accept-warn {
+    color: rgba(4, 233, 119, 0.986);
+}
+
+.reject-warn {
+    color: rgba(233, 20, 20, 0.74);
+}
+
+.change-warn {
+    color: rgba(4, 38, 233, 0.863);
+}
+
+p {
+    font-size: smaller;
+}

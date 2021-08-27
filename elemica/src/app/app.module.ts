@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatDialogModule} from '@angular/material/dialog';
@@ -19,6 +20,9 @@ import { DateComponent } from './date/date.component';
 import { PriceComponent } from './price/price.component';
 import { DescriptionComponent } from './description/description.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { DialogComponent } from './dialog/dialog.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
 
 
 
@@ -31,7 +35,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     QuantityComponent,
     DateComponent,
     PriceComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    DialogComponent,
+    OrderConfirmationComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule,
+    FormsModule,
+    ReactiveFormsModule
 
 
 

@@ -1,0 +1,32 @@
+<div class="confirmation-container col-10 mt-5">
+    <app-header></app-header>
+    <mat-card>
+        <div class="row">
+            <div class="col-3">
+                <app-description></app-description>
+            </div>
+
+            <div class="col-3 p-3">
+                <app-quantity></app-quantity>
+            </div>
+            <div class="col-3 p-3">
+                <app-date></app-date>
+            </div>
+            <div class="col-3 p-3">
+                <app-price></app-price>
+            </div>
+        </div>
+        <div>
+            <app-dialog>
+            </app-dialog>
+        </div>
+        <app-additional-details></app-additional-details>
+        <div>
+        </div>
+    </mat-card>
+    <mat-toolbar class="header">
+        <div class="example-button-row " style="margin-left: auto">
+            <button mat-raised-button color="primary" class=" p-1" (click)="submit()"> Submit Confirmation   </button>
+        </div>
+    </mat-toolbar>
+</div>

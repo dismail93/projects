@@ -1,34 +1,112 @@
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
 
-    
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title color="primary">
+                Additional Details
+            </mat-panel-title>
+            <mat-panel-description>
 
-      <mat-card class="mb-4">
-          <mat-card-header>
-              <mat-card-title>Additional Details</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-              <div class="row">
-                  <div class="col-sm">
-                      <mat-form-field>
-                          <input matInput placeholder="First Name">
-                      </mat-form-field>
-                  </div>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+            <div class="col-sm">
+                <mat-label>
+                    Product Grade Description
+                </mat-label>
+                <p>Corac N 339</p>
+                <mat-label>
+                    Specification:
+                </mat-label>
+                <p>123123123123</p>
+                <mat-label>
+                    Producer:
+                </mat-label>
+                <p>Orion Engineer</p>
+            </div>
+            <div class="col-sm">
+                <mat-label> Transport Method:
+                </mat-label>
+                <p>Road
+                </p>
+                <mat-label> Inco Terms (Location):
+                </mat-label>
+                <p>CPT (wealskdasdkl)
+                </p>
+                <mat-label> Unloading Point:
+                </mat-label>
+                <p>Amsterdam
+                </p>
+            </div>
+            <div class="col-sm">
+                <mat-label>
+                    Ship To Contact
+                </mat-label>
+                <p>Alan Dowl</p>
+                <mat-label>
+                    Phone </mat-label>
+                <p>23234234</p>
+                <mat-label>
+                    Fax
+                </mat-label>
+                <p>494595489</p>
+            </div>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+<!-- <mat-card class="mb-4">
+    <mat-card-header>
+        <mat-card-title>Additional Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
 
-                  <div class="col-sm">
-                      <mat-form-field>
-                          <input matInput placeholder="Last Name">
-                      </mat-form-field>
-                  </div>
-              </div>
+        <div class="row">
+            <div class="col-sm">
+                <mat-label>
+                    Product Grade Description
+                </mat-label>
+                <p>Corac N 339</p>
+                <mat-label>
+                    Specification:
+                </mat-label>
+                <p>123123123123</p>
+                <mat-label>
+                    Producer:
+                </mat-label>
+                <p>Orion Engineer</p>
+            </div>
+            <div class="col-sm">
+                <mat-label> Transport Method:
+                </mat-label>
+                <p>Road
+                </p>
+                <mat-label> Inco Terms (Location):
+                </mat-label>
+                <p>CPT (wealskdasdkl)
+                </p>
+                <mat-label> Unloading Point:
+                </mat-label>
+                <p>Amsterdam
+                </p>
+            </div>
+            <div class="col-sm">
+                <mat-label>
+                    Ship To Contact
+                </mat-label>
+                <p>Alan Dowl</p>
+                <mat-label>
+                    Phone </mat-label>
+                <p>23234234</p>
+                <mat-label>
+                    Fax
+                </mat-label>
+                <p>494595489</p>
+            </div>
+        </div>
 
-              <div class="row">
-                  <div class="col-sm">
-                      <mat-form-field>
-                          <mat-label>Choose a date</mat-label>
-                          <input matInput [matDatepicker]="picker">
-                          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                          <mat-datepicker #picker></mat-datepicker>
-                      </mat-form-field>
-                  </div>
-              </div>
-          </mat-card-content>
-      </mat-card>
+
+
+    </mat-card-content>
+</mat-card> -->

@@ -1,0 +1,26 @@
+<div *ngIf="actionType$ | async as action " class="col-9" style="margin-left: auto">
+    <mat-toolbar class="header ">
+
+        <section class="accept-box">
+            <div class="row" *ngIf="action === 'accept'">
+                <mat-icon class="accept-warn mr-2">warning</mat-icon>
+                <p>Once you click submit below, your Buyer will receive your order confirmation.</p>
+            </div>
+        </section>
+        <section class="change-box">
+            <div class="row" *ngIf="action === 'change'">
+                <mat-icon class="change-warn mr-2">warning</mat-icon>
+                <h1>Once you click submit below, your Buyer will receive your change request.</h1>
+            </div>
+        </section>
+        <section class="reject-box">
+            <div class="row" *ngIf="action === 'reject'">
+                <mat-icon class="reject-warn mr-2">warning</mat-icon>
+                <h1>Once you click submit below, your Buyer will receive your rejection.</h1>
+            </div>
+        </section>
+
+
+
+    </mat-toolbar>
+</div>

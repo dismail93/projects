@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 // import { Form, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,15 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DateComponent implements OnInit {
 
-
-  // confirmForm:FormGroup;
-  constructor() {
-  //   this.confirmForm = formBuilder.group({
-  //     date: formBuilder.control('in', Validators.required)
-  // });
+myForm!:FormGroup
+  
+  constructor(public fb: FormBuilder) {
+  
+  
    }
 
+   
+
+
+
   ngOnInit(): void {
+    this.myForm = this.fb.group({
+      date: [
+        ['Date is required',Validators.required,]
+      ]
+    });
   }
 
 }

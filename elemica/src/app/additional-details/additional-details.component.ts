@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./additional-details.component.css']
 })
 export class AdditionalDetailsComponent implements OnInit {
+  panelOpenState = false;
 
   constructor() { }
 

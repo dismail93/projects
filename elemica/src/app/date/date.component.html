@@ -14,13 +14,15 @@
             <p>09/25/1998</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm">
+    <div [formGroup]="myForm" class="row">
+        <div class="col-2">
             <mat-form-field>
                 <mat-label>Choose a date</mat-label>
-                <input required matInput [matDatepicker]="seStDt" formControlName="date">
-                <mat-datepicker-toggle matSuffix [for]="seStDt"></mat-datepicker-toggle>
-                <mat-datepicker #seStDt></mat-datepicker>
+                <input required matInput [matDatepicker]="datepicker" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker></mat-datepicker>
+                <mat-hint>Required</mat-hint>
+                <mat-error *ngIf="myForm.controls.date.invalid && myForm.controls.date.touched">Date is Required</mat-error>
 
             </mat-form-field>
         </div>
